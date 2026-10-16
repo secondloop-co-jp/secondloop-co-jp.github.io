@@ -1,0 +1,85 @@
+{
+  "source": {
+    "title": "Corporate Website",
+    "page": "Website",
+    "fileKey": "HVfBJvdRq2H356JIguk7Kh",
+    "url": "https://www.figma.com/design/HVfBJvdRq2H356JIguk7Kh/Corporate-Website",
+    "desktopFrame": {"id": "1:194", "width": 1440, "height": 2112},
+    "mobileFrame": {"id": "1:256", "width": 390, "height": 2368},
+    "foundationsFrame": "1:322",
+    "nativeVariableExport": "figma-variables/Mode 1.tokens.json"
+  },
+  "colors": {
+    "color/background": "#FFFFFF",
+    "color/surface": "#F3F7F5",
+    "color/text-primary": "#202B2A",
+    "color/text-secondary": "#60706D",
+    "color/accent": "#275C57",
+    "color/border": "#DDE5E2"
+  },
+  "typography": {
+    "fontFamily": "Noto Sans JP",
+    "type/hero-desktop": {"fontSize": 46, "lineHeight": 72},
+    "type/hero-mobile": {"fontSize": 27, "lineHeight": 44},
+    "type/section-desktop": {"fontSize": 34, "lineHeight": 48},
+    "type/section-mobile": {"fontSize": 30, "lineHeight": 42},
+    "type/body-md": {"fontSize": 16, "lineHeight": 28},
+    "type/body-lg": {"fontSize": 17, "lineHeight": 30},
+    "type/label": {"fontSize": 14, "lineHeight": 24},
+    "type/link-desktop": {"fontSize": 18, "lineHeight": 30},
+    "mobileEmailStyle": "type/body-md"
+  },
+  "layout": {
+    "desktopContentMax": 1120,
+    "desktopPageGutter": 160,
+    "mobilePageGutter": 24,
+    "desktopServices": "two columns; service copy and current application screenshot",
+    "mobileServices": "one column; copy, primary action, current application screenshot",
+    "spacingScale": [8, 16, 24, 32, 48, 64, 96],
+    "cardRadiusDesktop": 12,
+    "cardRadiusMobile": 10
+  },
+  "components": {
+    "action/primary-link": {
+      "mainComponent": "desktop Services",
+      "mobileInstance": "mobile Services frame",
+      "desktopWidth": 244,
+      "mobileWidth": 294,
+      "height": 52,
+      "minHeight": 44,
+      "paddingHorizontal": 24,
+      "paddingVertical": 16,
+      "radius": 6,
+      "desktopGap": 48,
+      "mobileGap": "auto (space between)",
+      "autoLayout": "horizontal; vertically centered",
+      "url": "https://imagebgm.secondloopapps.com/"
+    }
+  },
+  "verifiedBindings": {
+    "colors": "shared paint styles applied to matching fills; shared border style applied to matching strokes",
+    "type": "shared text styles applied to matching hero, section, label and body elements; desktop email has its own restrained link style",
+    "layout/content-max": "desktop Services, Company and Contact widths",
+    "action/primary-height": "primary-link component height",
+    "action/min-height": "primary-link component minimum height",
+    "space/16": "primary-link vertical padding",
+    "space/24": "primary-link horizontal padding",
+    "space/48": "primary-link desktop gap",
+    "remainingNumberTokens": "spacing scale and mobile gutter rules; retained as reusable foundations, not bound to every absolute-positioned section"
+  },
+  "review": {
+    "framesReviewed": ["desktop 1440", "mobile 390"],
+    "checked": ["hierarchy", "Japanese text fit", "spacing", "alignment", "screenshot optical centering", "restrained email size", "component consistency", "absence of test placements"],
+    "contrastOnWhite": {"textPrimary": 14.58, "textSecondary": 5.20, "accent": 7.62},
+    "contrastOnSurface": {"textPrimary": 13.49, "textSecondary": 4.82, "accent": 7.05},
+    "designTargetNote": "44px target size is this project's design target; it is not a claim of complete WCAG conformance.",
+    "implementationChecksPending": ["intermediate viewport widths", "keyboard focus", "semantic headings", "link hit areas including navigation and email", "browser and device rendering", "functional links"]
+  },
+  "updateWorkflow": {
+    "reuseExistingFigmaFile": true,
+    "numberTokens": "In Figma Variables, export the Website foundations collection's mode, then replace the native token JSON and compare values and stable variable IDs.",
+    "colorAndTypeStyles": "Review Figma color and text style definitions against this handoff when they change; they are styles, not number-variable exports.",
+    "preview": "Export Desktop — 1440 and Mobile — 390 as PNG after any design change.",
+    "automationStatus": "No Figma API token, billing change, permission expansion or production deployment was introduced. Repository integration is the parent task's next step."
+  }
+}
