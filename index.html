@@ -1,52 +1,85 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Second Loop Inc." />
-    <title>Second Loop Inc.</title>
+    <meta name="description" content="Second Loop株式会社は、Webサービス・アプリの企画・開発・運営を行っています。" />
+    <title>Second Loop株式会社 | Second Loop Inc.</title>
+    <link rel="canonical" href="https://secondloop.co.jp/" />
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-    <style>
-      :root {
-        color-scheme: light;
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
-        background: #f7f6f2;
-        color: #171717;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100svh;
-        margin: 0;
-      }
-
-      main {
-        display: grid;
-        min-height: 100svh;
-        place-items: center;
-        padding: 2rem;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(2rem, 7vw, 5rem);
-        font-weight: 600;
-        letter-spacing: -0.045em;
-        line-height: 1;
-        text-align: center;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/tokens.css" />
+    <link rel="stylesheet" href="/assets/site.css" />
   </head>
   <body>
-    <main>
-      <h1>Hello, Second Loop Inc.</h1>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header container">
+      <a class="brand" href="/">Second Loop株式会社</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#services">Services</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main" class="container" tabindex="-1">
+      <section class="introduction" aria-labelledby="intro-title">
+        <p class="eyebrow">Second Loop Inc.</p>
+        <h1 id="intro-title"><span class="hero-line">Webサービス・アプリの</span><br class="hero-break" /><span class="hero-line">企画・開発・運営を</span><span class="hero-line">行っています。</span></h1>
+      </section>
+      <section id="services" class="section-grid services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">01</p>
+          <h2 id="services-title">Services</h2>
+          <p class="section-caption">サービス</p>
+        </div>
+        <article class="service-card" aria-labelledby="imagebgm-title">
+          <div class="service-copy">
+            <div class="product-heading">
+              <img class="product-logo" src="/assets/imagebgm-logo.png" alt="" width="64" height="64" />
+              <h3 id="imagebgm-title">ImageBGM</h3>
+            </div>
+            <p class="service-tagline">画像から、その時間に合うBGMを。</p>
+            <p class="service-description">作業や読書、ひと息つきたいときに使える音楽サービスです。</p>
+            <a class="primary-link" href="https://imagebgm.secondloopapps.com/"><span class="link-label">ImageBGMをひらく</span><span class="arrow" aria-hidden="true">↗</span></a>
+            <p class="service-url">imagebgm.secondloopapps.com</p>
+          </div>
+          <div class="service-preview">
+            <img src="/assets/imagebgm-screen.jpg" alt="ImageBGMの画面。イラストが並ぶ一覧から、その時間に合うBGMを選べます。" width="464" height="760" loading="lazy" />
+          </div>
+        </article>
+      </section>
+      <section id="company" class="section-grid company" aria-labelledby="company-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">02</p>
+          <h2 id="company-title">Company</h2>
+          <p class="section-caption">会社情報</p>
+        </div>
+        <dl class="company-details">
+          <div><dt>会社名</dt><dd>Second Loop株式会社<span class="company-english">Second Loop Inc.</span></dd></div>
+          <div><dt>代表者</dt><dd>松田承一</dd></div>
+          <div><dt>所在地</dt><dd>東京都中央区日本橋室町1丁目11番12号<br class="address-break" />日本橋水野ビル7階</dd></div>
+          <div><dt>事業内容</dt><dd>Webサービス・アプリの企画・開発・運営</dd></div>
+        </dl>
+      </section>
+      <section id="contact" class="section-grid contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">03</p>
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-caption">お問い合わせ</p>
+        </div>
+        <div class="contact-copy">
+          <p>お問い合わせはメールで承ります。</p>
+          <a class="email-link" href="mailto:contact@secondloop.co.jp">contact@secondloop.co.jp<span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
     </main>
+    <footer class="site-footer container">
+      <p>Second Loop株式会社</p>
+      <small>© Second Loop Inc.</small>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+html { color-scheme: light; scroll-padding-top: var(--space-24); }
+body { margin: 0; background: var(--color-background); color: var(--color-text-primary); font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; font-size: var(--type-body-md-size); line-height: var(--type-body-md-line); overflow-wrap: anywhere; -webkit-text-size-adjust: 100%; }
+a { color: inherit; text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, main:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 5px; border-radius: 2px; }
+p, h1, h2, h3, dl, dd { margin: 0; }
+img { display: block; max-width: 100%; height: auto; }
+.container { width: min(var(--layout-content-max), calc(100% - 2 * var(--layout-page-gutter))); margin-inline: auto; }
+.skip-link { position: absolute; left: var(--space-24); top: 8px; transform: translateY(-180%); padding: 8px 16px; background: white; z-index: 1; }
+.skip-link:focus { transform: none; }
+.site-header { min-height: 104px; display: flex; justify-content: space-between; align-items: center; gap: var(--space-24); border-bottom: 1px solid var(--color-border); }
+.brand { display: inline-flex; align-items: center; min-height: var(--action-min-height); font-size: 21px; font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 48px; }
+nav a { display: inline-flex; align-items: center; min-height: var(--action-min-height); padding-inline: 8px; color: var(--color-text-secondary); font-size: var(--type-label-size); line-height: var(--type-label-line); text-decoration: none; }
+.introduction { padding-block: 84px 88px; }
+.eyebrow { color: var(--color-accent); margin-bottom: var(--space-32); }
+h1 { font-size: var(--type-hero-desktop-size); line-height: var(--type-hero-desktop-line); font-weight: 400; letter-spacing: -.025em; }
+.section-grid { display: grid; grid-template-columns: 264px minmax(0, 1fr); gap: var(--space-48); }
+.services, .company { border-top: 1px solid var(--color-border); padding-top: var(--space-48); }
+.section-number { font-size: 12px; line-height: 24px; color: var(--color-accent); margin-bottom: 12px; }
+h2 { font-size: var(--type-section-desktop-size); line-height: var(--type-section-desktop-line); font-weight: 400; }
+.section-caption { font-size: var(--type-label-size); line-height: var(--type-label-line); color: var(--color-text-secondary); margin-top: 8px; }
+.service-card { display: grid; grid-template-columns: minmax(0, 1fr) 304px; align-items: center; gap: 32px; background: var(--color-surface); border-radius: 12px; padding: 36px 32px 36px 40px; }
+.product-logo { width: 64px; height: 64px; }
+h3 { font-size: 30px; line-height: 44px; font-weight: 700; margin-top: 16px; }
+.service-tagline { margin-top: 16px; font-size: var(--type-body-lg-size); line-height: var(--type-body-lg-line); }
+.service-description { margin-top: 24px; color: var(--color-text-secondary); max-width: 290px; }
+.primary-link { display: flex; align-items: center; justify-content: space-between; gap: var(--space-16); min-height: var(--action-min-height); height: var(--action-primary-height); width: 244px; max-width: 100%; padding: var(--space-16) var(--space-24); margin-top: 48px; border-radius: 6px; background: var(--color-accent); color: white; font-size: 15px; line-height: 20px; }
+.link-label { white-space: nowrap; text-decoration: underline; text-underline-offset: .2em; }
+.primary-link { text-decoration: none; }
+.primary-link .arrow, .email-link .arrow { text-decoration: none; }
+.primary-link:hover { background: var(--color-text-primary); }
+.arrow { flex: none; font-size: 23px; line-height: 24px; font-weight: 400; }
+.service-url { font-size: 12px; line-height: 24px; color: var(--color-text-secondary); margin-top: 16px; }
+.service-preview { background: var(--color-image-matte); border-radius: 10px; padding: 20px 24px; }
+.service-preview img { width: 256px; margin-inline: auto; }
+.company { margin-top: 104px; }
+.company-details > div { display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 32px; padding-block: 24px; border-bottom: 1px solid var(--color-border); }
+.company-details > div:first-child { padding-top: 0; padding-bottom: 12px; }
+dt { color: var(--color-text-secondary); font-size: var(--type-label-size); line-height: var(--type-label-line); padding-top: 2px; }
+dd { font-size: var(--type-body-lg-size); line-height: var(--type-body-lg-line); }
+.company-english { display: block; font-size: var(--type-label-size); line-height: var(--type-label-line); color: var(--color-text-secondary); margin-top: 4px; }
+.contact { margin-top: 112px; padding: 48px; grid-template-columns: 396px minmax(0, 1fr); min-height: 272px; border-radius: 12px; background: var(--color-surface); align-items: start; }
+.contact-copy { padding-top: 24px; }
+.email-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--color-accent); min-height: var(--action-min-height); margin-top: 24px; padding-block: 8px; border-bottom: 1px solid var(--color-border); font-size: var(--type-link-desktop-size); line-height: var(--type-link-desktop-line); }
+.site-footer { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 104px; padding-block: 32px; border-top: 1px solid var(--color-border); font-size: 12px; line-height: 24px; }
+.site-footer small { font-size: 12px; color: var(--color-text-secondary); }
+@media (max-width: 1150px) {
+  .section-grid { grid-template-columns: 180px minmax(0, 1fr); gap: 32px; }
+  .service-card { grid-template-columns: minmax(0, 1fr) minmax(200px, 40%); padding: 28px; gap: 24px; }
+  .service-preview { padding: 16px; }
+  .contact { grid-template-columns: 35% minmax(0, 1fr); padding: 40px; }
+  .company-details > div { grid-template-columns: 100px minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 850px) {
+  .section-grid { grid-template-columns: 1fr; gap: 32px; }
+  .introduction { padding-block: 64px 72px; }
+  h1 { font-size: clamp(27px, 4.5vw, 40px); line-height: 1.65; }
+  .contact { grid-template-columns: 1fr; }
+  .contact-copy { padding-top: 0; }
+}
+@media (max-width: 600px) {
+  .site-header { min-height: 120px; display: block; padding-top: 16px; }
+  .brand { font-size: 19px; }
+  nav { gap: 24px; margin-top: 4px; }
+  nav a { padding-inline: 0; }
+  .introduction { padding-block: 60px 48px; }
+  .eyebrow { font-size: 14px; line-height: 24px; margin-bottom: 24px; }
+  h1 { font-size: clamp(23px, 6.92vw, var(--type-hero-mobile-size)); line-height: var(--type-hero-mobile-line); letter-spacing: -.025em; }
+  .hero-break { display: none; }
+  .hero-line { display: block; }
+  .services, .company { padding-top: 24px; }
+  .section-number { margin-bottom: 8px; }
+  h2 { font-size: var(--type-section-mobile-size); line-height: var(--type-section-mobile-line); }
+  .section-caption { margin-top: 4px; }
+  .section-grid { gap: 32px; }
+  .service-card { display: flex; flex-direction: column; align-items: stretch; padding: 24px; gap: 24px; border-radius: 10px; }
+  .product-heading { display: flex; align-items: center; gap: 16px; }
+  .product-logo { width: 52px; height: 52px; }
+  h3 { font-size: 26px; line-height: 40px; margin: 0; }
+  .service-tagline { font-size: 16px; line-height: 28px; margin-top: 24px; }
+  .service-description { margin-top: 16px; max-width: none; }
+  .primary-link { width: 100%; gap: 16px; margin-top: 24px; }
+  .service-url { margin-top: 12px; font-size: 11px; }
+  .service-preview { width: min(270px, 100%); margin-inline: auto; padding: 8px 25px; }
+  .service-preview img { width: 220px; }
+  .company { margin-top: 80px; }
+  .company-details > div { display: block; padding-block: 20px; }
+  .company-details > div:first-child { padding-bottom: 20px; }
+  dt { padding-top: 0; margin-bottom: 8px; }
+  dd { font-size: 16px; line-height: 28px; }
+  .contact { margin-top: 64px; padding: 24px; gap: 24px; min-height: 252px; border-radius: 10px; }
+  .contact-copy p { font-size: 16px; line-height: 28px; }
+  .email-link { font-size: var(--type-body-md-size); line-height: var(--type-body-md-line); margin-top: 8px; gap: 8px; }
+  .site-footer { margin-top: 64px; padding-block: 20px 24px; gap: 8px; font-size: 11px; }
+  .site-footer small { font-size: 11px; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
