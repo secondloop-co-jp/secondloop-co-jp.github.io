@@ -7,7 +7,7 @@
     "desktopFrame": {"id": "1:194", "width": 1440, "height": 2112},
     "mobileFrame": {"id": "1:256", "width": 390, "height": 2368},
     "foundationsFrame": "1:322",
-    "nativeVariableExport": "figma-variables/Mode 1.tokens.json"
+    "nativeVariableExport": "design/figma/website-foundations.tokens.json"
   },
   "colors": {
     "color/background": "#FFFFFF",
