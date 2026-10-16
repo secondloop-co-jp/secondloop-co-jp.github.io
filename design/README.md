@@ -25,7 +25,7 @@ The original export is preserved with Figma variable IDs. `handoff.json` records
    ```
 
    The command prints old/new values, validates numeric values and stable IDs, updates the native export, and regenerates `assets/tokens.css`. Token removals/renames or variable-ID changes stop the import. Review their CSS references and mappings first; use `--allow-schema-change` only after that review. Inspect the Git diff before committing.
-4. Color and typography are native Figma **styles**, so they are not contained in the number export. Compare changed style definitions with `handoff.json`, edit those records, then run `python3 scripts/design_tokens.py`. Update one-off layout rules in `assets/site.css` deliberately. Export both final frames as PNG for visual review.
+4. Color and typography are native Figma **styles**, so they are not contained in the number export. Compare changed style definitions with `handoff.json`, edit those records, then run `python3 scripts/design_tokens.py`. Font-family changes also require manually updating the font stack in `assets/site.css` and the Google Fonts stylesheet URL in `index.html`; the generator covers size and line-height, not font loading. Update one-off layout rules in `assets/site.css` deliberately. Export both final frames as PNG for visual review.
 5. Complete the checklist below and include the Figma nodes, changed values, screenshots and check results in the pull request. Do not put private Notion links, internal notes or credentials into the public repository.
 
 ## Review checklist
