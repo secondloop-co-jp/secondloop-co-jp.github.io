@@ -20,4 +20,6 @@ Use the existing [Corporate Website Figma file](https://www.figma.com/design/HVf
 
 The favicon and Apple touch icon retain the white-background assets from [Second Loop logo v1.0.0](https://github.com/secondloop-co-jp/logo/releases/tag/v1.0.0). `assets/imagebgm-logo.png` is the existing ImageBGM launch-record logo; `assets/imagebgm-screen.jpg` is the centered current service screenshot used in Figma. Their source is <https://imagebgm.secondloopapps.com/>. Refresh these deliberately when the service UI changes.
 
+`assets/copychew-logo.svg` and `assets/copychew-preview.jpg` reuse the official CopyChew [brand icon](https://copychew.secondloopapps.com/assets/brand.svg) and [Japanese introduction video poster](https://copychew.secondloopapps.com/assets/intro-ja-v9.jpg), retrieved on 2026-11-16. The service description follows the current [Japanese product page](https://copychew.secondloopapps.com/ja/).
+
 Noto Sans JP is requested from Google Fonts with `display=swap`. Local Japanese system fonts remain available when the font request is blocked. The page does not use analytics or client-side JavaScript.
