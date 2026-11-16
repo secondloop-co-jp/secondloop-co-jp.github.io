@@ -36,7 +36,7 @@ def main():
     page = Page()
     page.feed((ROOT / 'index.html').read_text())
     assert page.language == 'ja' and page.mains == 1
-    assert page.headings == ['h1', 'h2', 'h3', 'h2', 'h2'], page.headings
+    assert page.headings == ['h1', 'h2', 'h3', 'h3', 'h2', 'h2'], page.headings
     assert len(page.ids) == len(set(page.ids)), 'Duplicate IDs'
     for link in page.links:
         assert link, 'Empty link'
@@ -48,6 +48,7 @@ def main():
             assert urlsplit(link).scheme in ('https', 'mailto'), link
     assert 'mailto:contact@secondloop.co.jp' in page.links
     assert 'https://imagebgm.secondloopapps.com/' in page.links
+    assert 'https://copychew.secondloopapps.com/ja/' in page.links
     for img in page.images:
         assert 'alt' in img and img.get('width') and img.get('height'), img
         assert (ROOT / img['src'].lstrip('/')).is_file(), img
